@@ -390,6 +390,10 @@ footer {
 }
 
 @media (max-width:550px) {
+    .search-box {
+        width: 280px;
+    }
+
     footer {
         padding: 8px 15px;
         font-size: 0.9em;
@@ -432,7 +436,7 @@ footer {
 
     .product {
         margin-top: 10px;
-        width: 350px;
+        width: 360px;
         height: 180px;
         padding: 10px;
         align-items: center;
