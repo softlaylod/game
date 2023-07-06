@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,900;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+    width: 15px;
+    background-color: rgba(15 15 15);
+    box-shadow: 0px 0px 5px 0px rgb(0, 0, 0) inset;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(22, 22, 22);
+}
+
+body {
+    background-color: rgba(18 18 18);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: white;
+    height: 120px;
+    z-index: 999;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(14 14 14);
+    user-select: none;
+}
+
+.p-logo {
+    color: rgba(255 59 92);
+    margin-top: 30px;
+    cursor: default;
+}
+
+.www-logo:hover {
+    text-decoration: underline;
+    cursor: default;
+}
+
+.ico {
+    color: white;
+    font-size: 40px;
+    margin-left: -30px;
+    margin-right: 20px;
+    cursor: grabbing;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+    top: 0;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: white;
+    height: 100px;
+    user-select: none;
+    z-index: 999;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: rgba(14 14 14);
+    box-shadow: 5px 5px 12px black;
+    padding: 0px 50px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-bottom: -20px;
+}
+
+nav ul li {
+    display: inline;
+    background-color: rgb(3, 44, 44);
+    margin-right: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+nav ul li:hover {
+    background-color: rgb(2, 30, 30);
+    box-shadow: 5px 5px 0px rgb(25, 25, 25);
+    text-shadow: 0 0 3px yellow;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.input {
+    text-decoration: none;
+    color: transparent;
+    text-align: left;
+    margin-bottom: -20px;
+    width: 320px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 45px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.input::before {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: rgba(255 59 92);
+    content: "Search";
+    color: white;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    margin-left: 30px;
+    position: absolute;
+    width: 100px;
+    left: 0px;
+}
+
+.main {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.product {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    height: 320px;
+    background-color: rgba(12, 12, 12, 0.802);
+    border: 1px solid white;
+    height: 250px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    box-shadow: 2px 2px 25px 0 rgba(0, 0, 0, 0.711);
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.img {
+    width: 190px;
+    height: 190px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.info {
+    width: 100%;
+}
+
+.h3 {
+    align-items: center;
+    text-align: left;
+    color: white;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    margin: 40px 0px 0px 25px;
+}
+
+.h3::after {
+    content: ".";
+    margin-left: 2px;
+}
+
+.info a {
+    align-items: center;
+    text-align: center;
+    padding: 10px 25px;
+    margin: 30px 0px 0px 25px;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    transition: 0.5s ease;
+    text-decoration: none;
+    position: relative;
+    left: 0;
+}
+
+.info a:hover {
+    cursor: grab;
+    background-color: rgba(255, 255, 255, 0.429);
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px rgb(255, 255, 255);
+}
+
+.info a:active {
+    cursor: grabbing;
+    background-color: rgba(255, 255, 255, 0.577);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgb(255, 255, 255);
+}
+
+.btn-area {
+    display: flex;
+}
+
+
+.search-box {
+    transition: 0.3s ease;
+    width: 360px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    margin-bottom: -20px;
+    background-color: rgb(3, 44, 44);
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.search-box button {
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border: none;
+    width: 60px;
+    font-size: 25px;
+    cursor: grab;
+}
+
+.search-box button:active {
+    cursor: grabbing;
+}
+
+.search-box:hover {
+    background-color: rgb(1, 18, 18);
+    cursor: grab;
+}
+
+.search-box:active {
+    background-color: rgb(1, 11, 11);
+    cursor: grabbing;
+}
+
+.br-menio {
+    margin-left: -195px;
+    display: none;
+}
+
+.birgar {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+}
+
+
+.birgar:hover {
+    background-color: rgb(2, 30, 30);
+    box-shadow: 5px 5px 0px rgb(25, 25, 25);
+    text-shadow: 0 0 3px yellow;
+}
+
+#myList {
+    max-height: 0px;
+    width: 0%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 25px 0 rgba(0, 0, 0, 0.711);
+    background-color: rgb(25, 25, 25);
+    overflow: hidden;
+    border: 1px solid gray;
+    transition: max-height 0.3s ease-out;
+}
+
+#myList a {
+    border: 1px solid gray;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: rgb(3, 44, 44);
+    transition: 0.2s ease;
+    margin-left: 5px;
+}
+
+#myList a:hover {
+    background-color: rgb(2, 24, 24);
+}
+
+#myList span {
+    color: transparent;
+    font-size: 20px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: white;
+    user-select: none;
+    align-items: center;
+    z-index: 998;
+    background-color: rgba(14 14 14);
+    box-shadow: 0px 0px 10px black;
+}
+
+.footer-title {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.footer-title a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media (max-width:1020px) {
+    .nor {
+        display: none;
+    }
+
+    nav {
+        margin-top: 50px;
+        overflow: hidden;
+        padding: 10px;
+    }
+
+    .search-box {
+        width: 290px;
+        margin-left: 5px;
+    }
+
+    .br-menio {
+        display: flex;
+        margin-right: -10px;
+    }
+
+    .product {
+        margin-top: 20px;
+    }
+
+    footer {
+        color: #fff;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-title {
+        font-size: 1em;
+        font-weight: 600;
+    }
+}
+
+@media (max-width:550px) {
+    footer {
+        padding: 8px 15px;
+        font-size: 0.9em;
+        font-weight: 800;
+    }
+
+    .footer-title a {
+        text-decoration: underline;
+    }
+
+    .img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #myList {
+        width: 77%;
+    }
+
+    .br-menio {
+        display: flex;
+        margin-right: -10px;
+    }
+
+    .p-logo {
+        color: rgba(255 59 92);
+        margin-top: 20px;
+        cursor: default;
+    }
+
+    header {
+        font-size: 1.2em;
+        height: 100px;
+        margin-top: -20px;
+    }
+
+    .ico {
+        font-size: 1.2em;
+    }
+
+    .product {
+        margin-top: 10px;
+        width: 360px;
+        height: 180px;
+        padding: 10px;
+        align-items: center;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+        margin-left: 10px;
+    }
+
+    .h3 {
+        margin-top: -1px;
+        font-size: 0.9em;
+        width: 90%;
+    }
+
+    .info a {
+        font-size: 1em;
+        padding: 5px 15px;
+        margin-top: -1px;
+        margin-top: 10px;
+    }
+}
